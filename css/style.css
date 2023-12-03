@@ -45,10 +45,6 @@ nav ul li:hover, nav ul li a:hover {
     background-color: #0056b3;
 }
 
-article {
-    margin-bottom: 40px;
-}
-
 footer {
     margin-top: 40px;
     text-align: center;
@@ -142,8 +138,8 @@ footer {
     color: white;
 }
 
-body.michigan #reduce-motion-toggle, 
-body.michigan #auto-scroll-toggle, 
+body.michigan #reduce-motion-toggle,
+body.michigan #auto-scroll-toggle,
 body.michigan #contrast-toggle,
 body.michigan #michigan-toggle,
 body.michigan #speak {
@@ -151,8 +147,8 @@ body.michigan #speak {
     color: black;
 }
 
-body.michigan #reduce-motion-toggle:hover, 
-body.michigan #auto-scroll-toggle:hover, 
+body.michigan #reduce-motion-toggle:hover,
+body.michigan #auto-scroll-toggle:hover,
 body.michigan #contrast-toggle:hover,
 body.michigan #michigan-toggle:hover,
 body.michigan #speak:hover {
@@ -168,7 +164,6 @@ body.michigan #speak:hover {
     font-weight: bold;
     text-transform: capitalize;
     text-align:center;
-    rotate: 15deg;
     animation: pop-in-out 5s ease-in-out infinite;
     text-shadow: 2px 2px 5px darkblue;
 }
@@ -177,7 +172,6 @@ body.michigan #speak:hover {
     animation: none;
     color: #FFCB05;
     animation: spin-animation 5s ease-in-out infinite;
-    rotate: 0deg;
 }
 
 @keyframes spin-animation {
@@ -296,7 +290,7 @@ header h1 {
 }
 
 
-#animated-background-section h1 {
+#animated-background-section h2 {
     font-size: 1.2em;
     text-shadow: 2px 2px 4px #666;
     font-weight: bold;
@@ -323,7 +317,7 @@ header h1 {
 .skip-link:focus {
     top: 0;
 }
-.reduce-motion #animated-background-section h1 {
+.reduce-motion #animated-background-section h2 {
     color: black;
     text-shadow: none;
 

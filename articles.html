@@ -11,37 +11,37 @@
     <header>
         <h1>Accessible Blog</h1>
         <nav>
-            <h1 id="news-feed-description1">Updates in real-time!</h1>
+            <h2 id="news-feed-description1">Updates in real-time!</h2>
             <ul id = "nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="articles.html">Articles</a></li>
             </ul>
-            <section class="accessibility-buttons">
+            <div class="accessibility-buttons">
                 <button id="speak">Read Aloud</button>
                 <button id="reduce-motion-toggle">Reduce Motion</button>
                 <button id="auto-scroll-toggle">Toggle Auto Scroll</button>
                 <button id="michigan-toggle">Toggle Michigan</button>
-            </section>
+            </div>
         </nav>
     </header>
 
     <main id = "main">
-        <section id= "start">
-        <section id="help-button-container">
+        <div id= "start">
+        <div id="help-button-container">
             <button id="news-feed-help" onclick="showHelp()">Help</button>
-        </section>
-        <section id="news-feed-options">
+        </div>
+        <div id="news-feed-options">
             <button id="umich" onclick="showFeed('umich')">University of Michigan News</button>
             <button id="tech" onclick="showFeed('tech')">US Tech News</button>
             <button id="sports" onclick="showFeed('sports')">Sports News</button>
 
-        </section>
-    </section>
-        <section id="news-feed-display">
+        </div>
+    </div>
+        <div id="news-feed-display">
             <div id="news-feed-content">
                 <script src="js/articles.js"></script>
             </div>
-        </section>
+        </div>
     </main>
     <script src="js/access.js"></script>
 
