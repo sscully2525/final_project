@@ -13,9 +13,12 @@ function clearFeedContent() {
         links_title[i].innerHTML = '';
         links_title[i].href = '#';
     }
-    var divys = document.getElementsByTagName('div');
-    for (var i = 0; i < divys.length; i++) {
-        divys[i].innerHTML = '';
+    var divs = document.getElementsByTagName('div');
+    for (var i = 0; i < divs.length; i++) {
+        if (divs[i].innerHTML.includes("Powered by RSS 2 HTML")) {
+            divs[i].parentNode.removeChild(divs[i]);
+            i--;
+        }
     }
 }
 
