@@ -1,0 +1,372 @@
+body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: black;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+header h1 {
+    color: cyan;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #4F4F4F;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+    font-size: 0.8em;
+}
+
+nav ul li:hover, nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: #0056b3;
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #333333;
+}
+
+.reduce-motion * {
+    animation: none !important;
+    transition: none !important;
+}
+
+.accessibility-buttons {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.accessibility-buttons button {
+    background-color: #4F4F4F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.accessibility-buttons button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+#animated-background-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+}
+
+.animated-background {
+    animation: slide 20s linear infinite;
+}
+
+.reduce-motion #animated-background-section {
+    background-image: none;
+    animation: none;
+}
+
+.michigan{
+    background-color:#00274C;
+}
+
+.michigan nav ul li{
+    background-color:#00274C;
+}
+
+.michigan nav ul li a{
+    color: black;
+}
+.michigan #nav-list a:any-link {
+    color: #00274C
+}
+.michigan a:any-link:hover {
+    color: #FFCB05;
+}
+.michigan a:any-link{
+    color: #d0b33f;
+}
+
+.michigan a:any-link:active {
+    color: purple
+}
+
+.michigan nav ul li a{
+    background-color: #FFCB05;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+.michigan h1{
+    color: white;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 3.2em;
+}
+
+.michigan p{
+    color: white;
+}
+
+body.michigan #reduce-motion-toggle, 
+body.michigan #auto-scroll-toggle, 
+body.michigan #contrast-toggle,
+body.michigan #michigan-toggle,
+body.michigan #speak {
+    background-color: #FFCB05;
+    color: black;
+}
+
+body.michigan #reduce-motion-toggle:hover, 
+body.michigan #auto-scroll-toggle:hover, 
+body.michigan #contrast-toggle:hover,
+body.michigan #michigan-toggle:hover,
+body.michigan #speak:hover {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+#news-feed-description1{
+    display: block;
+    font-size: 2.2em;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align:center;
+    rotate: 15deg;
+    animation: pop-in-out 5s ease-in-out infinite;
+    text-shadow: 2px 2px 5px darkblue;
+}
+
+.michigan #news-feed-description1{
+    animation: none;
+    color: #FFCB05;
+    animation: spin-animation 5s ease-in-out infinite;
+    rotate: 0deg;
+}
+
+@keyframes spin-animation {
+    0% {
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        font-size: 20px;
+    }
+
+}
+
+@keyframes pop-in-out {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(2.1);
+    }
+}
+
+.michigan #news-feed-description{
+    font-size: 1.2em;
+    color: white
+}
+
+#umich, #tech, #sports {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align:center;
+}
+
+.michigan #umich,.michigan #tech, .michigan #sports {
+    background-color: #00274C;
+}
+
+.michigan #umich:hover,.michigan #tech:hover, .michigan #sports:hover {
+    background-color: #FFCB05;
+    color: black;
+}
+
+#umich:hover,#tech:hover, #sports:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.michigan #start{
+    background-image: url('../images/michigan.png');
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+}
+
+#help-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#news-feed-help {
+    background-color: #4F4F4F;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+#news-feed-help:hover {
+    background-color: #0056b3;
+}
+
+.michigan #news-feed-help {
+    background-color: #dfcc81;
+    color: black;
+    border: black solid 2px;
+}
+
+.michigan #news-feed-help:hover {
+    background-color:lightskyblue;
+    color: black;
+}
+
+
+.accessibility-buttons button, h1, p, nav ul li a, a:any-link, main, body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1 {
+    color: black;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px #666;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+    text-align: center;
+}
+
+
+#animated-background-section h1 {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px #666;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+    text-align: center;
+    color: white;
+}
+
+.reduce-motion #animated-background-section p {
+    text-shadow: none;
+    color: black;
+}
+
+.skip-link {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+.reduce-motion #animated-background-section h1 {
+    color: black;
+    text-shadow: none;
+
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    body, html {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1025px) {
+    body, html {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+}

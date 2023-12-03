@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Feeds - Accessible Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to Main Content</a>
+    <header>
+        <h1>Accessible Blog</h1>
+        <nav>
+            <h1 id="news-feed-description1">Updates in real-time!</h1>
+            <ul id = "nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+            <section class="accessibility-buttons">
+                <button id="speak">Read Aloud</button>
+                <button id="reduce-motion-toggle">Reduce Motion</button>
+                <button id="auto-scroll-toggle">Toggle Auto Scroll</button>
+                <button id="michigan-toggle">Toggle Michigan</button>
+            </section>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <section id= "start">
+        <section id="help-button-container">
+            <button id="news-feed-help" onclick="showHelp()">Help</button>
+        </section>
+        <section id="news-feed-options">
+            <button id="umich" onclick="showFeed('umich')">University of Michigan News</button>
+            <button id="tech" onclick="showFeed('tech')">US Tech News</button>
+            <button id="sports" onclick="showFeed('sports')">Sports News</button>
+
+        </section>
+    </section>
+        <section id="news-feed-display">
+            <div id="news-feed-content">
+                <script src="js/articles.js"></script>
+            </div>
+        </section>
+    </main>
+    <script src="js/access.js"></script>
+
+</body>
+</html>
